@@ -77,6 +77,8 @@ class FFCaseCreation:
                  ds_low_les  = None,
                  extent_low  = None,
                  ffbin = None,
+                 turbsim_bin=None,
+                 mann_bin=None,
                  mod_wake = 1,
                  yaw_init = None,
                  ADmodel = None,
@@ -168,6 +170,7 @@ class FFCaseCreation:
         self.extent_low  = extent_low
         self.extent_high = extent_high
         self.ffbin       = ffbin
+        # turbsim_bin
         self.mod_wake    = mod_wake
         self.yaw_init    = yaw_init
         self.ADmodel     = ADmodel

@@ -77,7 +77,9 @@ def main():
     
     # ----------- Execution parameters
     ffbin = '/full/path/to/your/binary/.../bin/FAST.Farm'
-    
+    turbsim_bin = '/full/path/to/your/binary/.../bin/TurbSim'
+    mann_bin = '/full/path/to/your/binary/.../bin/Mann'
+
     # ----------- LES parameters. This variable will dictate whether it is a TurbSim-driven or LES-driven case
     LESpath = '/full/path/to/the/LES/case'
     #LESpath = None # set as None if TurbSim-driven is desired
@@ -125,7 +127,8 @@ def main():
     case = FFCaseCreation(path, wts, tmax, zbot, vhub, shear, TIvalue, inflow_deg,
                           dt_high_les, ds_high_les, extent_high,
                           dt_low_les, ds_low_les, extent_low,
-                          ffbin=ffbin, mod_wake=mod_wake, yaw_init=yaw_init,
+                          ffbin=ffbin, turbsim_bin=turbsim_bin, mann_bin=mann_bin,
+                          mod_wake=mod_wake, yaw_init=yaw_init,
                           nSeeds=nSeeds, LESpath=LESpath, refTurb_rot=refTurb_rot,
                           verbose=1)
 
